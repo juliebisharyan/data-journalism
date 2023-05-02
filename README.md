@@ -33,7 +33,7 @@ As part of the new school year, a three-day teacher training was held to familia
 
 “There’s no question that it’s a mark of inequity throughout the system,” Migdail said.
 
-**California’s school funding formula**
+### **California’s school funding formula**
 
 Pay disparities between districts have been a long-standing issue in California, and several measures have been taken in the past to address it.
 
@@ -51,7 +51,7 @@ According to John Baker, former board trustee president of SSFUSD, the city's gr
 
 While this has helped to narrow the salary disparity with other districts in recent years, teachers are still left underpaid with many leaving for reasons beyond pay.
 
-**Impact on students**
+### **Impact on students**
 
 Students also feel the weight of teacher turnover. 
 
@@ -70,7 +70,7 @@ Many student-teachers from Stanford University used to come teach at South San F
 
 “When I asked my AP classes, who here wants to be a teacher, nobody ever raises their hand,” said Rhonda Clements, a history teacher at South San Francisco High School.
 
-**A state issue** 
+### **A state issue** 
 
 Despite efforts by districts like SSFUSD to address high teacher turnover with modest salary increases, the root cause of the problem could be linked to California's funding levels for education.
 
@@ -78,7 +78,7 @@ While the LCFF is designed to address inequities and provide more resources to s
 
 In 2021, California ranked 17th out of 41 states in its funding level, spending $15,017 per student in state and local funding, according to the U.S. Census Bureau. This is just $329 more than the national average of $14,668 and about 38% less than the per-pupil funding in Washington D.C.
 
-![statefundingchart](https://user-images.githubusercontent.com/98369114/235567347-30a58703-2eff-4ef6-bded-0be99bef1fdf.png)
+![7M1ZM-funding-level-among-states](https://user-images.githubusercontent.com/98369114/235575600-04601fa3-cda9-4c95-afae-5dd4166c2068.png)
 
 
 California’s high cost of living also means that the state can afford fewer teachers, staff and resources, making it more difficult for the state to provide the same level of funding per student as other states.
@@ -93,7 +93,7 @@ Recent state level changes in funding, as well as emergency funds from the pande
 
 “Sad that some of these changes took a pandemic to bring about,” Mitchell said.
 
-**The teachers who leave**
+### **The teachers who leave**
 
 When Daphne Pacia-McCann was 23, she accepted her first teaching position at South San Francisco High School. Having graduated from the district, she accepted the offer immediately and was greeted by the principal with a “welcome home.” 
 
@@ -120,6 +120,9 @@ During contract negotiations with the Teacher's Association, higher pay is often
 The latest contract agreement between the union and district resulted in a 4.5% salary increase beginning in the 2023-24 school year followed by a 3% salary increase in the 2024-25 school year.
 
 According to the district, it's too costly for SSFUSD to provide full family coverage for health insurance, leaving teachers with poor pay and benefits.
+
+![benefitschart](https://user-images.githubusercontent.com/98369114/235575679-039ae798-3d57-4d78-a18b-814a9c87a18d.png)
+
 
 Recently, SSFUSD has started covering the increased rates for individual employees with Kaiser health insurance, which is something the union had been pushing for years. But for those starting families, it still isn’t enough.
 
@@ -156,7 +159,7 @@ Teachers at higher paying districts aren’t immune to the Bay Area’s expensiv
 
 “The higher pay scale does not protect us against that problem,” said Edith Salvatore, Spanish teacher and union president at Sequoia Union High School District. 
 
-**The teachers who stay**
+### **The teachers who stay**
 
 Clements has been teaching at South San Francisco High School for 17 years. She’s taught AP U.S. History and Health, sustained the school’s History Day Program and Earth Club, and helped build outdoor learning spaces during the pandemic. 
 
@@ -174,7 +177,7 @@ Still, she realizes the sacrifices and difficult choices she’s had to make to 
 
 “I'm really happy I didn't have another child,” she added. “Otherwise I would have lived a life of extraordinary poverty, and I probably would have had to quit teaching.”
 
-**The teachers who come back**
+### **The teachers who come back**
 
 Despite the appeal of neighboring districts, South San Francisco High School’s strong working-class and diverse community has made it difficult for teachers to leave.
 
@@ -210,9 +213,9 @@ In this project, I’m using four data sources.
 This data was obtained through a public record request to South San Francisco Unified School District. I also obtained data for the number of active teachers at the two high schools from the California Department of Education.
 
 
-2. **Salary Rates among San Mateo County School Districts**
+2. **Salary and Benefits Rates among San Mateo County School Districts**
 
-I obtained this data from the California Department of Education. I focused only on the high school districts and unified school districts in San Mateo County, as I am interested in looking at high school teachers specifically. I also excluded La Honda-Pescadero Unified School District, as it is a significally smaller district than the others. The salaries have also been adjusted for inflation to show more accurately how the salaries have changed over the years.
+I obtained this data from the California Department of Education. I focused only on the high school districts and unified school districts in San Mateo County, as I am interested in looking at high school teachers specifically. I also excluded La Honda-Pescadero Unified School District, as it is a significally smaller district than the others. The salaries and benefits costs have also been adjusted for inflation to show more accurately how the salaries have changed over the years.
 
 3. **CAASPP Test Results for SSFUSD and SUHSD**
 
@@ -231,7 +234,7 @@ Finally, I obtained this data from the U.S. Census Annual Survey of School Syste
 <img width="1118" alt="Screenshot 2023-05-01 at 8 07 40 PM" src="https://user-images.githubusercontent.com/98369114/235571511-d7fd8de5-bb38-4c10-b1d3-27d0529f2c25.png">
 <img width="552" alt="Screenshot 2023-05-01 at 8 07 24 PM" src="https://user-images.githubusercontent.com/98369114/235571520-1932f524-d636-452c-8e61-32c3e78835a7.png">
 
-2. The salary data was pulled from a large data set that contained the salaries for every school in California. I filtered out only the districts I wanted to focus on for each year and adjusted for inflation. 
+2. The salary and benefits data was pulled from a large data set that contained the salaries for every school in California. I filtered out only the districts I wanted to focus on for each year and adjusted for inflation. I subtracted the employer contribution from the average cost of benefits to calculate how much teachers were spending out of pocket each year for their benefits package.
 
 3. This dataset was fairly straightforward, so I just manually put the numbers for the test results into a Google Spreadsheet.
 
