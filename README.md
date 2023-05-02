@@ -205,32 +205,42 @@ Throughout her career, she’s noticed a lot of her colleagues leave South San F
 
 In this project, I’m using four data sources.
 
-1. Turnover Rate in SSFUSD
+1. **Turnover Rate in SSFUSD**
 
 This data was obtained through a public record request to South San Francisco Unified School District. I also obtained data for the number of active teachers at the two high schools from the California Department of Education.
 
-2. Salary Rates among San Mateo County School Districts
 
-I obtained this data from the California Department of Education. I focused only on the high school districts and unified school districts in San Mateo County, as I am interested in looking at high school teachers specifically. I also excluded La Honda-Pescadero Unified School District, as it is a simnifically smaller district than the others. The salaries have also been adjusted for inflation to show more accurately how the salaries have changed over the years.
+2. **Salary Rates among San Mateo County School Districts**
 
-3. CAASPP Test Results for SSFUSD and SUHSD
+I obtained this data from the California Department of Education. I focused only on the high school districts and unified school districts in San Mateo County, as I am interested in looking at high school teachers specifically. I also excluded La Honda-Pescadero Unified School District, as it is a significally smaller district than the others. The salaries have also been adjusted for inflation to show more accurately how the salaries have changed over the years.
+
+3. **CAASPP Test Results for SSFUSD and SUHSD**
 
 This data was obtained from the California Department of Education. I focused on these two districts to see if there would be a significant difference between a district with more money.
 
-4. Per-Pupil Funding Levels in the U.S.  
+
+4. **Per-Pupil Funding Levels in the U.S.**  
 
 Finally, I obtained this data from the U.S. Census Annual Survey of School System Finances. This data only shows information for 41 states as the data is still being collected. 
 
 
 ## Data Cleaning
 
-1.  I combined the teacher termination data set I had received from the district with the number of active teachers data set from the California DOE to get a more accurate picture of how many teachers were leaving each year. I divided the number of terminations by the number of active teachers. I filtered out substitute/temporary teachers as well as non-teacher positions. I was hoping to compare this data with the termination data from one of the higher paying districts — however, after much consideration and cleaning, I felt that their data set was not reliable or accurate enough to include. 
+1.  I combined the teacher termination data set I had received from the district with the number of active teachers data set from the California DOE to get a more accurate picture of how many teachers were leaving each year. I divided the number of terminations by the number of active teachers using a formula in Google Sheets. I filtered out substitute/temporary teachers as well as non-teacher positions. I was hoping to compare this data with the termination data from one of the higher paying districts — however, after much consideration and cleaning, I felt that their data set was not reliable or accurate enough to include. 
+
+<img width="1118" alt="Screenshot 2023-05-01 at 8 07 40 PM" src="https://user-images.githubusercontent.com/98369114/235571511-d7fd8de5-bb38-4c10-b1d3-27d0529f2c25.png">
+<img width="552" alt="Screenshot 2023-05-01 at 8 07 24 PM" src="https://user-images.githubusercontent.com/98369114/235571520-1932f524-d636-452c-8e61-32c3e78835a7.png">
 
 2. The salary data was pulled from a large data set that contained the salaries for every school in California. I filtered out only the districts I wanted to focus on for each year and adjusted for inflation. 
 
 3. This dataset was fairly straightforward, so I just manually put the numbers for the test results into a Google Spreadsheet.
 
-4. This data was also fairly straightforward as I just downloaded the file from the U.S. Census Annual Survey of School System Finances and found the section for per-pupil funding information. 
+<img width="460" alt="Screenshot 2023-05-01 at 8 08 54 PM" src="https://user-images.githubusercontent.com/98369114/235571620-7e41e610-2015-4600-a1a9-9ab1128e6b5e.png">
+
+4. This data was also straightforward as I just downloaded the file from the U.S. Census Annual Survey of School System Finances and found the section for per-pupil funding information. 
+
+<img width="897" alt="Screenshot 2023-05-01 at 8 10 55 PM" src="https://user-images.githubusercontent.com/98369114/235571819-cbbb68d9-a71c-4080-9351-adeef27f23ec.png">
+
 
 ## Reporting Questions and Answers
 
@@ -240,10 +250,10 @@ After dividing the number of terminations by the number of total teachers each y
 
 2. What are the differences in teacher salaries in San Mateo County school districts? 
 
-The chart shows this best, but San Mateo Union High and Sequoia Union High pay significally higher than the other school districts in San Mateo County. Based on my reporting, this is due to these districts having higher property taxes. SSFUSD is in the middle range while Jefferson Union High and Cabrillo Unified have the lowest salaries in the county. 
+The chart shows this best, but San Mateo Union High and Sequoia Union High pay significally higher than the other school districts in San Mateo County. Based on my reporting, this is due to these districts having higher property taxes. South San Francisco Unified School District is in the middle range while Jefferson Union High and Cabrillo Unified have the lowest salaries in the county. 
 
 
-3. How do students at SSFUSD perform academically compared to students at Sequoia Union High School District, a wealthier school district?
+3. How do students at South San Francisco Unified School District perform academically compared to students at Sequoia Union High School District, a wealthier school district?
 
 Students at Sequoia Union High District overall perform better than students at SSFUSD. This might be due to the fact that those schools are better funded and have more resources. 
 
@@ -260,5 +270,5 @@ Based on the data from 2021, California ranks at number 17. However, this data o
 
 [Rent Prices](https://datawrapper.dwcdn.net/jaO2Q/2/)
 
-(minimum salary chart was created in R) 
+(minimum salary chart was created in R Studio) 
 
