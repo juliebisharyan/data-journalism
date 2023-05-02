@@ -210,7 +210,7 @@ In this project, I’m using four data sources.
 
 1. **Turnover Rate in SSFUSD**
 
-This data was obtained through a public record request to South San Francisco Unified School District. I also obtained data for the number of active teachers at the two high schools from the California Department of Education.
+This data was obtained through a public record request to South San Francisco Unified School District. I also obtained data for the number of active teachers at the two high schools from the California Department of Education. I spoke to both [Peter Feng](https://www.ssfusd.org/apps/pages/communications)  and [Jay Spaulding](https://www.ssfusd.org/apps/pages/human-resources) from the district for this data. Peter Feng is the Communications Officer at the district, so he was helpful in providing the data set with. Jay Spaulding works in the Human Resources department, and he was able to give more context on the data, such as the reasons for the high turnover rates.
 
 
 2. **Salary and Benefits Rates among San Mateo County School Districts**
@@ -219,7 +219,7 @@ I obtained this data from the California Department of Education. I focused only
 
 3. **CAASPP Test Results for SSFUSD and SUHSD**
 
-This data was obtained from the California Department of Education. I focused on these two districts to see if there would be a significant difference between a district with more money.
+This data was obtained from Ed Data. I focused on these two districts to see if there would be a significant difference between a district with more money.
 
 
 4. **Per-Pupil Funding Levels in the U.S.**  
@@ -234,9 +234,11 @@ Finally, I obtained this data from the U.S. Census Annual Survey of School Syste
 <img width="1118" alt="Screenshot 2023-05-01 at 8 07 40 PM" src="https://user-images.githubusercontent.com/98369114/235571511-d7fd8de5-bb38-4c10-b1d3-27d0529f2c25.png">
 <img width="552" alt="Screenshot 2023-05-01 at 8 07 24 PM" src="https://user-images.githubusercontent.com/98369114/235571520-1932f524-d636-452c-8e61-32c3e78835a7.png">
 
-2. The salary and benefits data was pulled from a large data set that contained the salaries for every school in California. I filtered out only the districts I wanted to focus on for each year and adjusted for inflation. I subtracted the employer contribution from the average cost of benefits to calculate how much teachers were spending out of pocket each year for their benefits package.
+2. The salary and benefits data was pulled from a large data set that contained the salaries for every school in California. I filtered out only the districts I wanted to focus on for each year and adjusted for inflation. 
 
 3. This dataset was fairly straightforward, so I just manually put the numbers for the test results into a Google Spreadsheet.
+
+<img width="1089" alt="Screenshot 2023-05-01 at 9 43 04 PM" src="https://user-images.githubusercontent.com/98369114/235581103-5638d5e6-c07d-45b9-a736-e46b4cca5d18.png">
 
 <img width="460" alt="Screenshot 2023-05-01 at 8 08 54 PM" src="https://user-images.githubusercontent.com/98369114/235571620-7e41e610-2015-4600-a1a9-9ab1128e6b5e.png">
 
@@ -249,20 +251,29 @@ Finally, I obtained this data from the U.S. Census Annual Survey of School Syste
 
 1. What is the average teacher turnover rate for South San Francisco Unified School District?
 
-After dividing the number of terminations by the number of total teachers each year, the average termination rate for high school teachers in South San Francisco Unified School District is about 14%. 
+I opened the data set for SSFUSD terminations each year into Google Sheets. I filtered out non-teaching positions and terminations that were due to temporary employment. I then opened up the active number of teachers at SSFUSD in another Google Sheet. I created a seperate sheet that took note of the number of terminations each year and the number of active teachers. After dividing the number of terminations by the number of total teachers each year, the average termination rate for high school teachers in South San Francisco Unified School District is about 14%. 
 
 2. What are the differences in teacher salaries in San Mateo County school districts? 
 
-The chart shows this best, but San Mateo Union High and Sequoia Union High pay significally higher than the other school districts in San Mateo County. Based on my reporting, this is due to these districts having higher property taxes. South San Francisco Unified School District is in the middle range while Jefferson Union High and Cabrillo Unified have the lowest salaries in the county. 
+The chart shows this best, but San Mateo Union High and Sequoia Union High pay significally higher than the other school districts in San Mateo County. Based on my reporting, this is due to these districts having higher property taxes. South San Francisco Unified School District is in the middle range while Jefferson Union High and Cabrillo Unified have the lowest salaries in the county. I found this answer from downloading the data set for each year from the California Department of Education. I combined the files and filtered out the districts I wanted to focus on in R. I also adjusted for inflation using the CPI. This data set contains both 'minimum salaries' and 'maximum salaries,' so I decided to just focus on the minimum salaries. 
+
+3. How much do teachers at South San Francisco Unified School District pay out of pocket for their benefits package compared to other teachers in San Mateo County?
+
+In 2015, teachers at SSFUSD were paying the highest amount on average for their benefits package (about $1,500 annualy), compared to at other districts. This data set contained the "the annual cost of plan for active employees" and "the amount the district contributes to the cost of the plan." Basically, I subtracted the two numbers to get how much the employees would have to pay out of pocket. Since the dataset contained the costs of different individual plans, I calculated the average cost of the benefits for a single individual.
 
 
-3. How do students at South San Francisco Unified School District perform academically compared to students at Sequoia Union High School District, a wealthier school district?
+4. How do students at South San Francisco Unified School District perform academically compared to students at Sequoia Union High School District, a wealthier school district?
 
-Students at Sequoia Union High District overall perform better than students at SSFUSD. This might be due to the fact that those schools are better funded and have more resources. 
+Students at Sequoia Union High District overall perform better than students at SSFUSD. This might be due to the fact that those schools are better funded and have more resources. To get this answer, I copied and pasted the table from Ed Data into Google Sheets for both districts.
 
-5. How does California rank compared to other states in its education funding?
+6. How does California rank compared to other states in its education funding?
 
-Based on the data from 2021, California ranks at number 17. However, this data only has information for 41 states, so that number might change once the other remaining states are included. Still, California spends 38% less than the $24,535 in per-pupil funding in Washington D.C.
+Based on the data from 2021, California ranks at number 17. However, this data only has information for 41 states, so that number might change once the other remaining states are included. Still, California spends 38% less than the $24,535 in per-pupil funding in Washington D.C. For this, I downloaded the data set and brought it into Google sheets. I sorted the per-pupil funding to see which state spent the least and which state spent the most. 
+
+6. What is the average rent in South San Francisco?
+
+According to Zumper, the average rent for a one-bedroom apartment in South San Francisco is $2,390. The price has gone up about 27% since 2016. To get this, I copied and pasted the table from Zumper's dataset into Google sheets and used a formula to calculate the average. I also calculated the percentage increase using NOO. 
+
 
 ## Data Visualization Links
 [Math Test scores](https://datawrapper.dwcdn.net/3tGBd/1/) 
@@ -273,5 +284,5 @@ Based on the data from 2021, California ranks at number 17. However, this data o
 
 [Rent Prices](https://datawrapper.dwcdn.net/jaO2Q/2/)
 
-(minimum salary chart was created in R Studio) 
+(minimum salary and benefits chart was created in R Studio) 
 
