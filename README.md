@@ -59,9 +59,10 @@ Constant churning of staff not only negatively impacts achievement for students 
 
 At Sequoia Union High School District in Redwood City, over half of the students met or exceeded the standard of the California Assessment of Student Performance and Progress test (CAASPP) in 2021. In comparison, only 25.79% of students at SSFUSD met or exceeded the math portion of the test and 65.43% for the English/Language Art Literacy portion. 
 
-![mathscorechart](https://user-images.githubusercontent.com/98369114/235566860-aaaece5b-0db8-483c-9511-3b9f3795fcf6.png)
+![mathchart](https://user-images.githubusercontent.com/98369114/236054999-6e0c052d-b2e1-45b2-b5db-c9600d2bba95.png)
 
-![englishchart](https://user-images.githubusercontent.com/98369114/235566891-c87a331c-4536-4323-8c40-81eec3eb1de5.png)
+![englishchart](https://user-images.githubusercontent.com/98369114/236055008-f9a50ffb-95cb-401b-8aca-662d6873b250.png)
+
 
 
 Marcie Mitchell, the librarian at South San Francisco High School, has also noticed turnover impacts future generations of teachers and the school’s external relationships with teaching programs.
